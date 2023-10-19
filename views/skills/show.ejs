@@ -3,15 +3,15 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Skills</title>
+    <title>Express To Do</title>
     <link rel="stylesheet" href="/stylesheets/style.css" />
   </head>
   <body>
     <a href="/">Home</a>
-    <ul>
-      <% skills.forEach(function(t) { %>
-      <li><a href="/skills/<%= t.id %>"><%= t.name %></a></li>
-      <% }); %> 
-    </ul>
+    |
+    <a href="/skills">All skills</a>
+    <h3><%= skill.name %></h3>
+    <h3>Proficiency</h3>
+    <h4><%= skill.level %></h4>
   </body>
 </html>
